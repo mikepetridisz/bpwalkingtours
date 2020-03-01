@@ -2,7 +2,7 @@ title: mikepetridisz Blog
 description: My Personal Blog
 author: Miklos Petridisz
 github: https://github.com/mikepetridisz
-about: I'm doing Data Engineering
+about: I do Big Data Engineering
 disqus_shortname: stackproblems
 google_analytics: UA-XXXXXXXX-Y
 
@@ -15,14 +15,10 @@ collections:
     permalink: /project/:path/
 
 social:
-    - icon: fa-facebook
-      link: "#"
     - icon: fa-twitter
-      link: "#"
+      link: "https://twitter.com/mikepetridisz"
     - icon: fa-linkedin
-      link: "#"
-    - icon: fa-stack-exchange
-      link: "#"
+      link: "https://www.linkedin.com/in/miklos-petridisz/"
     - icon: fa-github
       link: "https://github.com/mikepetridisz"
 
