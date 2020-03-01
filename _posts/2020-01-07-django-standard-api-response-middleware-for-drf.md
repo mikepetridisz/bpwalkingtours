@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Django Standard API Response Middleware for DRF"
+title:  "Apache Spark - SparkUI: Deep Dive"
 date:   2020-01-07 10:17:00 +0700
 categories: [apache-spark]
 ---
