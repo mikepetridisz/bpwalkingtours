@@ -3,7 +3,6 @@ description: My Personal Blog
 author: Miklos Petridisz
 github: https://github.com/mikepetridisz
 about: I do Big Data Engineering
-disqus_shortname: stackproblems
 google_analytics: UA-XXXXXXXX-Y
 
 enableTags: true
