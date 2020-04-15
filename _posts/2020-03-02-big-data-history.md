@@ -1,4 +1,9 @@
-
+---
+layout: post
+title:  "Big Data History (Optional)"
+date:   2020-01-10 10:17:00 +0700
+categories: [Big Data History (Optional)]
+---
 [Home](./README.md) | 
 [Internet](./internet.md) | 
 [AWS](./aws.md) | 
