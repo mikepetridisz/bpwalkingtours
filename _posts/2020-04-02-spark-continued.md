@@ -1,5 +1,8 @@
 ---
-layout: default
+layout: post
+title:  "Apache Spark Internals"
+date:   2020-04-16 10:17:00 +0700
+categories: [Apache Spark Internals]
 ---
 [Home](./README.md) | 
 [Internet](./internet.md) | 
