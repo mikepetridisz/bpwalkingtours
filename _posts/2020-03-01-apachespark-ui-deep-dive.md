@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Apache Spark - SparkUI: Deep Dive"
+title:  "Apache Spark - Monitoring and Instrumentation - Deep Dive "
 date:   2020-01-07 10:17:00 +0700
 categories: [apache-spark]
 ---
 
-## Apache Spark - Monitoring and Instrumentation -Deep Dive 
+## Apache Spark - Monitoring and Instrumentation - Deep Dive 
 
 The driver program hosts `SparkContext()`, which is the heart of the Spark Application. A channel is required to be set up via the cluster manager and the Driver Program that offers resources to host the application. The application thereafter is shipped to Worker Nodes to host executors and run multiple tasks simultaneously. As the application is up and running, multiple JVMs kick off in a production environment – even though the distributed environment: the application – has been written as if one had only a single JVM. The Spark UI Console is a useful tool for us to measure the details of the Spark Application to improve its performance. Since the cluster manager assigns Worker Node(s) to the program, SparkContext() will communicate directly with executors. The communication between executors and the drivers happen via RPC messages through Netty (org.apache.spark.rpc.netty) – a low level infrastructure - that sends current statuses of the Spark Application. 
 Through Event Sources the `DAGScheduler` takes the RDD lineage and evaluates the execution plan with the help of the `TaskSchedulerImpl` and `SchedulerBackend` (`CoarseGrainedSchedulerBackend`) - the main scheduler backend. In case dynamic partitioning is of interest, there are different customized scheduler backends for Yarn and Mesos (`FineGrainedSchedulerBackend` (deprecated)) in cluster mode. These components communicate and exchange information about the Spark Application. One can intervene via the `SparkContext()` that talks to this distributed environment responsible for executing the tasks assigned to them by the driver. Event Buses – single threaded components – process all the events that were sent during the execution of the DSL that expresses distributed computations using this distributed environment like Hadoop Yarn or built-in Spark Standalone. 
