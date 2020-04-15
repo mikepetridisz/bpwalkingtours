@@ -1,8 +1,8 @@
-title: mikepetridisz Blog
-description: My Personal Blog
-author: Miklos Petridisz
+title: Data Engineering 2
+description: Data Engineering 2
+author: CEU
 github: https://github.com/mikepetridisz
-about: I do Big Data Engineering
+about: Cloud and Big Data Computing course delivered at the Central European University ceu.edu
 google_analytics: UA-XXXXXXXX-Y
 
 enableTags: true
@@ -26,9 +26,9 @@ share:
   fb_appid: 1749788565247320
 
 urls:
-    - text: About Me
+    - text: About
       url: /about/
-    - text: My Projects
+    - text: Homeworks
       url: /projects/
     - text: XML Feed
       url: /feed.xml
