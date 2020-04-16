@@ -4,13 +4,14 @@ title:  "Big Data History (Optional)"
 date:   2020-01-10 10:17:00 +0700
 categories: [Big Data History (Optional)]
 ---
-[Home](./README.md) | 
-[Internet](./internet.md) | 
-[AWS](./aws.md) | 
-[Serverless](./serverless.md) | 
-[Optional - Big Data History](./big_data_history.md) | 
-[Spark Overview](./apachespark.md) | 
-[Spark DataFrame API, SQL and Internals](spark-continued.md) |
+
+[Home](/about.md) | 
+[Internet](./2020-03-01-internet.md) | 
+[AWS](./2020-03-01-aws.md) | 
+[Serverless](./2020-03-02-serverless.md) | 
+[Optional - Big Data History](./2020-03-02-big-data-history.md) | 
+[Spark Overview](./2020-03-02-apache-spark.md) | 
+[Spark DataFrame API, SQL and Internals](2020-04-02-spark-continued.md) |
 <!--
 [Spark Overview](./spark_overview.md).
 [Spark DataFrame & SQL API](./sparkAPI.md).
