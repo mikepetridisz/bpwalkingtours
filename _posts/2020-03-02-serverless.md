@@ -53,7 +53,7 @@ cast
 **Output:** 
  [1] "Tim Robbins" "Morgan Freeman" "Bob Gunton" "William Sadler" "Clancy Brown"  "Gil Bellows"  "Mark Rolston" [8] "James Whitmore" "Jeffrey DeMunn" "Larry Brandenburg" "Neil Giuntoli" "Brian Libby"  "David Proval" "Joseph Ragno"  [15] "Jude Ciccolella"   
 
-![scrapedemo1](Images/Serverless/cast.png)
+![scrapedemo1](/Images/Serverless/cast.png)
 
 ### rvest
 - rvest is package that makes it easy to scrape data from html web pages, inspired by libraries like beautifulsoup (bs4). You can express complex operations as elegant pipelines composed of simple, easily understood pieces. rvest is built upon the xml2 package and also accept config from the httr package. For the most part, we only need rvest. However, we need httr if we want to add extra configurations.
@@ -107,7 +107,7 @@ For that, we’ll use the selector Google Chrome extension gadget that you've do
 
 Make sure that all the rankings are selected. You can select some more ranking sections in case you are not able to get all of them and you can also de-select them by clicking on the selected section to make sure that you only have those sections highlighted that you want to scrape for that go.
 
-![cssselector](Images/Serverless/selector1.png)
+![cssselector](/Images/Serverless/selector1.png)
 
 Once you are sure that you have made the right selections, you need to copy the corresponding CSS selector.
 ```r
@@ -141,7 +141,7 @@ head(title_data)
 ```
 *Output: "The Shawshank Redemption" "Pulp Fiction" "The Lion King" "Forrest Gump" " Léon: The Professional" " Interview with the Vampire: The Vampire Chronicles"*
 
-![selectorcss2](Images/Serverless/selector2.png)
+![selectorcss2](/Images/Serverless/selector2.png)
 
 #### STEP 2: Scraping the title description. 
 ```r
@@ -164,7 +164,7 @@ head(description_data)
 [5] "    Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. An unusual relationship forms as she becomes his protégée and learns the assassin's trade."
 [6] "    A vampire tells his epic life story: love, betrayal, loneliness, and hunger."*
 
-![cssselector3](Images/Serverless/selector3.png)
+![cssselector3](/Images/Serverless/selector3.png)
 
 #### STEP 3: Scraping the runtime field. 
 ```r
@@ -276,7 +276,7 @@ movies_df<-data.frame(Rank = rank_data, Title = title_data,
 #Structure of the data frame
 view(movies_df)
 ```
-![dataframe](Images/Serverless/dfmovies.png)
+![dataframe](/Images/Serverless/dfmovies.png)
 
 
 #### STEP 10: Simple plot
@@ -290,7 +290,7 @@ qplot(data = movies_df, Genre, fill = Genre)
 ggplot(movies_df,aes(x=Runtime,y=Rank))+
 geom_point(aes(size=Rating,col=Genre))
 ```
-![dataframe](Images/Serverless/gplot1.png)
+![dataframe](/Images/Serverless/gplot1.png)
 
 * * * 
 
@@ -298,7 +298,7 @@ geom_point(aes(size=Rating,col=Genre))
 
 #### Amazon Polly
 
-![polly](Images/Serverless/polly.jpg)
+![polly](/Images/Serverless/polly.jpg)
 
 
 Amazon Polly is a cloud service that converts text into lifelike speech. You can use Amazon Polly to develop applications that increase engagement and accessibility. Amazon Polly supports multiple languages and includes a variety of lifelike voices, so you can build speech-enabled applications that work in multiple locations and use the ideal voice for your customers. With Amazon Polly, you only pay for the text you synthesize. You can also cache and replay Amazon Polly’s generated speech at no additional cost.
@@ -345,7 +345,7 @@ library("aws.polly")
 list_voices()
 ```
 
-![voices](Images/Serverless/voices.png)
+![voices](/Images/Serverless/voices.png)
 
 #### Using Polly
 If you do not have tuneR, make sure to install it: `install.packages("tuneR") `
@@ -368,7 +368,7 @@ play(vec)
 
 #### Amazon Comprehend
 
-![comprehend](Images/Serverless/comprehend.png)
+![comprehend](/Images/Serverless/comprehend.png)
 
 >Amazon Comprehend uses a pre-trained model to examine and analyze a document or set of documents to gather insights about it. This model is continuously trained on a large body of text so that there is no need for you to provide training data.
 
@@ -412,13 +412,13 @@ library("aws.comprehend")
 # simple language detection
 detect_language("I have to remind myself that some birds aren’t meant to be caged.")
 ```
-![language](Images/Serverless/language.png)
+![language](/Images/Serverless/language.png)
 
 
 ```r
 detect_sentiment("The world went and got itself in a big damn hurry.")
 ```
-![language](Images/Serverless/sentiment.png)
+![language](/Images/Serverless/sentiment.png)
 
 
 ```r
@@ -426,17 +426,17 @@ detect_sentiment("The world went and got itself in a big damn hurry.")
 txt <- c("The convicts in Shawshank have become so used to the idea of being in prison, that they can't really remember life outside of it.", "Ellis Boyd Redding makes a reference to the fact that prison life is all about routine.")
 detect_entities(txt)
 ```
-![entity](Images/Serverless/entities.png)
+![entity](/Images/Serverless/entities.png)
 
 ```r
 detect_phrases(txt)
 ```
-![phrases](Images/Serverless/phrases.png)
+![phrases](/Images/Serverless/phrases.png)
 
 
 
 #### Amazon S3
-![s3](Images/Serverless/s3.png)
+![s3](/Images/Serverless/s3.png)
 
 [Documentation](https://cran.r-project.org/web/packages/aws.s3/aws.s3.pdf)
 
@@ -525,7 +525,7 @@ delete_bucket(bucket_name)
 
 #### Amazon Translate
 
-![translate](Images/Serverless/translate.png)
+![translate](/Images/Serverless/translate.png)
 
 Amazon Translate is a neural machine translation service that delivers fast, high-quality, and affordable language translation. Neural machine translation is a form of language translation automation that uses deep learning models to deliver more accurate and more natural sounding translation than traditional statistical and rule-based translation algorithms. Amazon Translate allows you to localize content - such as websites and applications - for international users, and to easily translate large volumes of text efficiently.
 
@@ -563,7 +563,7 @@ attr(,"TargetLanguageCode")
 
 #### Amazon Rekognition
 
-![rekognition](Images/Serverless/rekognition.jpg)
+![rekognition](/Images/Serverless/rekognition.jpg)
 
 Amazon Rekognition makes it easy to add image and video analysis to your applications. You just provide an image or video to the Rekognition API, and the service can identify the objects, people, text, scenes, and activities, as well as detect any inappropriate content. Amazon Rekognition also provides highly accurate facial analysis and facial recognition on images and video that you provide. You can detect, analyze, and compare faces for a wide variety of user verification, people counting, and public safety use cases.
 
@@ -658,7 +658,7 @@ for face in detect_faces(BUCKET, KEY):
 
 #### Amazon Transcribe
 
-![transcribe](Images/Serverless/transcribe.png)
+![transcribe](/Images/Serverless/transcribe.png)
 
 [Demo](https://www.youtube.com/watch?v=09UXBHrAX2A)
 
