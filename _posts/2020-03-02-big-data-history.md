@@ -87,7 +87,7 @@ MapReduce itself only handled batch processing which was fine because that's the
 Because of these different workloads, the result was that people proposed a wide variety of specialized cluster computing systems for these workloads that are sort of the equivalent of MapReduce for streaming. And that's kind of the direction that the software went into. So basically we started this section with MapReduce that did batch processing but it was just a general engine. You could do many different types of batch processing, which was good. And then we got all these specialized systems including inside Google and also outside it. So in Google for example they developed Pregel and Dremel which were systems for graph processing and interactive queries respectively. In the open source Hadoop ecosystem, there are also a lot of open source projects with interesting names like Impala, Storm and so on that do different things. Some of them are graph processing some of them are streaming and so on. 
 
 <p align="center">
-  <img src="Images/SparkOverview/hadoopspecialized.png">
+  <img src="Images/SparkOverview/hadoopspecialized.png" width="1000">
   </p>
 
 Today, you just see that there's a ton of these systems out there and people often use some kind of combination of them. With specialized systems, even though they solve the individual problems that they tackle, there are also some challenges with having them. 
