@@ -63,7 +63,7 @@ https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Col
    - This opens up execution optimizations
 - Even if we use Spark's Structured APIs from Python or R, the majority of our manipulations will operate strictly on Spark types not Python types
 
-![catalyst](Images/Spark_Advanced/catalyst.png)
+![catalyst](/Images/Spark_Advanced/catalyst.png)
 
 The code we write gets submitted to Spark either through console or via a submitted job
 - This code passes through the Catalyst Optimizer, which decides how the code should be executed and lays out a plan for doing so before, finally, the code is run and the result is returned to the user
@@ -76,7 +76,7 @@ It does this by converting user code into an unresolved logical plan. The plan i
 
 #### Physical Planning
 After creating the optimized logical plan, Spark begins the physical planning process. The physical plan - often called Spark plan - specifies how the logical plan will execute on the cluster by generating different physical execution strategies and comparing them through a cost model. Upon selecting a physical plan Spark runs all of this code over RDDs.
-![physical-plan](Images/Spark_Advanced/physical.png)
+![physical-plan](/Images/Spark_Advanced/physical.png)
 
 </p>
   
