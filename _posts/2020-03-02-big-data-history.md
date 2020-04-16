@@ -43,7 +43,7 @@ categories: [Big Data History (Optional)]
 
 ### The Big Picture 
 <p align="center">
-  <img src="Images/SparkOverview/bigpicture.png">
+  <img src="/Images/SparkOverview/bigpicture.png">
   </p>
 
 Spark is a cluster computing engine that generalizes the MapReduce programming model that Google introduced back in 2004. Basically, Spark tries to support more types of applications and make them easier to program than MapReduce does. The goal was to make Spark both easy and fast to process large data sets on a cluster of machines. 
@@ -53,7 +53,7 @@ The way Spark did it:
   - A **unified engine** that can capture many different workloads on the same engine. So you don't have to hook together many different systems to create a pipeline. You can actually express them all in the same programming model and that's very powerful to get both faster and and easier to use processing. Thus, in terms of the unified engine what that means is that on top of the Spark engine there's a wide variety of standard libraries that are built in and these are the four shipped with the project:
   
 <p align="center">
-  <img src="Images/SparkOverview/sparkfuture2.png">
+  <img src="/Images/SparkOverview/sparkfuture2.png">
   </p>
 
 - **Spark SQL** lets you work with structured data and use languages like SQL or other API's as well to query this kind of data
@@ -66,7 +66,7 @@ The nice thing about these is that they're all just libraries you can combine to
 Let's discuss why Spark was designed to have a unified engine by introducing the history of large scale cluster computing. A lot of the recent wave in data intensive computing started back in 2004 with the MapReduce paper published by Google. 
 
 <p align="center">
-  <img src="Images/SparkOverview/googlemapreduce.png">
+  <img src="/Images/SparkOverview/googlemapreduce.png">
   </p>
 
 #### Google in this paper said (paraphrased):
@@ -87,7 +87,7 @@ MapReduce itself only handled batch processing which was fine because that's the
 Because of these different workloads, the result was that people proposed a wide variety of specialized cluster computing systems for these workloads that are sort of the equivalent of MapReduce for streaming. And that's kind of the direction that the software went into. So basically we started this section with MapReduce that did batch processing but it was just a general engine. You could do many different types of batch processing, which was good. And then we got all these specialized systems including inside Google and also outside it. So in Google for example they developed Pregel and Dremel which were systems for graph processing and interactive queries respectively. In the open source Hadoop ecosystem, there are also a lot of open source projects with interesting names like Impala, Storm and so on that do different things. Some of them are graph processing some of them are streaming and so on. 
 
 <p align="center">
-  <img src="Images/SparkOverview/hadoopspecialized.png" width="1000">
+  <img src="/Images/SparkOverview/hadoopspecialized.png">
   </p>
 
 Today, you just see that there's a ton of these systems out there and people often use some kind of combination of them. With specialized systems, even though they solve the individual problems that they tackle, there are also some challenges with having them. 
@@ -125,12 +125,12 @@ While these all look different, it turns out all three needs one thing that MapR
 
 ### Running things on MapReduce
 <p align="center">
-  <img src="Images/SparkOverview/datamap.png">
+  <img src="/Images/SparkOverview/datamap.png">
   </p>
 This represents the case when you want to run an iterative algorithm - so algorithm that goes through the data multiple times. What you do with MapReduce is you start with some input data in a distributed file system like **HDFS** the **Hadoop distributed file system** and then you read it into a MapReduce job (that's the blue box iteration 1). And then that job has to write the result back out to a file system because from its point of view, it's finished. All it does is compute something and write it back out. Once you've done doing that you go ahead and you immediately read it into the next job which is another MapReduce and you write it out again and so on. Between every pair of jobs you have to go through this distributed replicated file system to actually save the data to share it between the jobs and that's pretty inefficient.
 
 <p align="center">
-  <img src="Images/SparkOverview/datamap2.png">
+  <img src="/Images/SparkOverview/datamap2.png">
   </p>
 
 Interactive queries have a similar problem. So you have your data in this distributed file system and then each query has to read it from their pair set and figure out the result for that query. Furthermore, all of them have to go back to the source data. There's no way to share stuff if you had some kind of intermediate result or common processing between the queries. So doing this using MapReduce and using just the file system as data sharing is slow - mostly due to replication of data across the network and disk I/O. Every time you write a result it needs to be sent across the network to many machines and and you
@@ -140,12 +140,12 @@ need to do this disk I/O to actually store it reliably.
 
 What Spark wanted to have is a way to make this intermediate sharing much faster and it does it by replacing the sharing with just in-memory sharing. 
 <p align="center">
-  <img src="Images/SparkOverview/datainspark.png">
+  <img src="/Images/SparkOverview/datainspark.png">
   </p>
 
 So Spark keeps the data in memory in the same process and let you run different computations on it. Spark also does it by changing the fault tolerance mechanism so that Spark doesn't have to replicate the data or save back to disk. Spark can actually do the sharing at the speed of memory instead of at the speed of a distributed file system. 
 <p align="center">
-  <img src="Images/SparkOverview/datainspark2.png">
+  <img src="/Images/SparkOverview/datainspark2.png">
   </p>
   
 **Sharing data and memory within the same machine is easily 10 to a 100 times faster than the network or the disk**. So if your computation can keep up with that you'll get a significant speed up. 
