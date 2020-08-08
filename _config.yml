@@ -1,8 +1,8 @@
-title: Data Engineering 2
-description: Data Engineering 2
-author: Central European University
+title: Miklos Petridisz
+description: @mikepetridisz Tech Blog
+author: Miklos Petridisz
 github: https://github.com/mikepetridisz
-about: Cloud and Big Data Computing course
+about: Tech-focused blog
 google_analytics: UA-XXXXXXXX-Y
 
 enableTags: true
@@ -28,7 +28,7 @@ share:
 urls:
     - text: About
       url: /about/
-    - text: Homeworks
+    - text: Lab
       url: /projects/
     - text: XML Feed
       url: /feed.xml
