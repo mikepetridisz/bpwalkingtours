@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Homeworks
+title: Tech Lab Showcase
 permalink: /projects/
 ---
 
