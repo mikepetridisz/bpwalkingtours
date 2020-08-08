@@ -1,23 +1,9 @@
 ---
 layout: post
-title:  "Serverless"
+title:  "Serverless Solutions in the Cloud"
 date:   2020-01-09 10:17:00 +0700
 categories: [Serverless]
 ---
-
-[Home](/about.md) | 
-[Internet](./2020-03-01-internet.md) | 
-[AWS](./2020-03-01-aws.md) | 
-[Serverless](./2020-03-02-serverless.md) | 
-[Optional - Big Data History](./2020-03-02-big-data-history.md) | 
-[Spark Overview](./2020-03-02-apache-spark.md) | 
-[Spark DataFrame API, SQL and Internals](2020-04-02-spark-continued.md) |
-<!--
-[Spark Overview](./spark_overview.md).
-[Spark DataFrame & SQL API](./sparkAPI.md).
-[Spark Internals](./spark_internals.md).
--->
-[Help/Resources](./resources.md).
 
 ### Serverless Solutions in the Cloud
 
