@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Apache Spark - Monitoring and Instrumentation - Deep Dive"
-date:   2020-01-07 10:17:00 +0700
+date:   2020-03-07 10:17:00 +0700
 categories: [apache-spark]
 ---
 
