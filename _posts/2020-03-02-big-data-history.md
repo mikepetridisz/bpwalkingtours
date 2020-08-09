@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "From Hadoop MapReduce to Apache Spark"
-date:   2020-01-10 10:17:00 +0700
+date:   2018-01-10 10:17:00 +0700
 categories: [Hadoop MapReduce, Apache Spark]
 ---
 
