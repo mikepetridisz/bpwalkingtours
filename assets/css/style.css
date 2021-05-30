@@ -2983,6 +2983,49 @@ textarea.form-control {
     z-index: 2;
 }
 
+/* navbar blog */
+
+.header-transparentblog .navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: #ffffff;
+}
+
+
+.header-transparentblog .navbar .navbar-toggler .menu-lines:before,
+.header-transparentblog .navbar .navbar-toggler .menu-lines:after,
+.header-transparentblog .navbar .navbar-toggler .menu-lines span {
+    background-color: #ffffff;
+}
+
+.header-transparentblog .logo-light {
+    display: inline-block;
+    width: 150px;
+    height: auto;
+}
+
+.header-transparentblog .logo-dark {
+    display: none;
+    width: 150px;
+    height: auto;
+    padding: 0px;
+    margin: -20%;
+}
+
+.header-transparentblog .nav__item .nav__item-link,
+.header-transparentblog .search-popup-trigger {
+    color: #000;
+}
+
+.header-transparentblog .action__btn-request:before {
+    background-color: #000;
+}
+
+.header-transparentblog .action__btn-request:hover {
+    color: #11837D;
+}
+
+
+
 
 /* navbar transparent */
 
@@ -2990,6 +3033,7 @@ textarea.form-control {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     background-color: transparent;
 }
+
 
 .header-transparent .navbar .navbar-toggler .menu-lines:before,
 .header-transparent .navbar .navbar-toggler .menu-lines:after,
@@ -4346,7 +4390,7 @@ textarea.form-control {
 }
 
 .slider .slide__title {
-    font-size: 85px;
+    font-size: 65px;
     line-height: 1.2;
     color: #ffffff;
     margin-bottom: 30px;
