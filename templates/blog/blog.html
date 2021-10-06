@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+{% block content %}
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section class="page-title page-title-layout7 bg-overlay bg-overlay-2 bg-parallax text-center">
+      <div class="bg-img"><img src="static/images/sliders/6.jpg" alt="background"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <h1 class="pagetitle__heading mb-0">Blog</h1>
+          </div><!-- /.col-xl-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title -->
+
+    <!-- ======================
+      Blog Grid
+    ========================= -->
+    <section class="blog-grid">
+      <div class="container">
+        <div class="row">
+          <!-- Blog Item #1 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="blog-item">
+              <div class="blog__img">
+                <a href="covid-19-budapest-may-2021.html">
+                  <img src="static/images/covid/covid2.jpeg" alt="blog image">
+                </a>
+              </div><!-- /.blog-img -->
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <div class="blog__meta-cat">
+                    <a href="#">Covid-19</a><a href="#">Insights</a>
+                  </div><!-- /.blog-meta-cat -->
+                </div><!-- /.blog-meta -->
+                <h4 class="blog__title"><a href="#">The current COVID-19 situation in Budapest</a></h4>
+                <span class="blog__meta-date">May 20, 2021</span>
+                <p class="blog__desc">The vaccine rollout is progressing well in Hungary, which has helped Hungary become one of the most vaccinated countries in the world (the rate of vaccination in Budapest is above the country average). COVID infection rates are low and are in steady decline...
+                </p>
+                <a href="covid-19-budapest-may-2021.html" class="btn btn__secondary btn__link">
+                  <span>Read More</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div><!-- /.blog-content -->
+            </div><!-- /.blog-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- Blog Item #2 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="blog-item">
+              <div class="blog__img">
+                <a href="covid-19-certificates-may-2021.html">
+                  <img src="static/images/covid/immun-covid.jpeg" alt="blog image">
+                </a>
+              </div><!-- /.blog-img -->
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <div class="blog__meta-cat">
+                    <a href="#">Immunity Certificates</a><a href="#">Covid-19</a>
+                  </div><!-- /.blog-meta-cat -->
+                </div><!-- /.blog-meta -->
+                <h4 class="blog__title"><a href="#">Important information about immunity certificates in Hungary</a></h4>
+                <span class="blog__meta-date">May 30, 2021</span>
+                <p class="blog__desc">A number of international documents from many countries are already being accepted (meaning you can be granted entry), with the list of documents expanding quickly. In case you are unsure whether your certificate of vaccination / immunity will be accepted in Hungary please get in touch...</p>
+                <a href="covid-19-certificates-may-2021.html" class="btn btn__secondary btn__link">
+                  <span>Read More</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div><!-- /.blog-content -->
+            </div><!-- /.blog-item -->
+          </div><!-- /.col-lg-4 -->
+         
+</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+            <nav class="pagination-area">
+              <ul class="pagination justify-content-center">
+                <li><a class="current" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#"><i class="icon-arrow-right"></i></a></li>
+              </ul>
+            </nav><!-- .pagination-area -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.blog Grid -->
+    {% endblock content %}
