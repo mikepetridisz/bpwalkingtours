@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout_tours.html" %}
 {% block content %}
     <!-- ========================
        page title 
@@ -13,75 +13,217 @@
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.page-title -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-    <!-- ======================
-      Blog Grid
+     <!-- ======================
+      Blog carousel
     ========================= -->
-    <section class="blog-grid">
+    
+    <section class="blog-carousel pt-0 pb-50 mt--200 z-index-2">
       <div class="container">
-        <div class="row">
-          <!-- Blog Item #1 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="blog-item">
-              <div class="blog__img">
-                <a href="covid-19-budapest-may-2021.html">
-                  <img src="static/images/covid/covid2.jpeg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="blog__content">
-                <div class="blog__meta">
-                  <div class="blog__meta-cat">
-                    <a href="#">Covid-19</a><a href="#">Insights</a>
-                  </div><!-- /.blog-meta-cat -->
-                </div><!-- /.blog-meta -->
-                <h4 class="blog__title"><a href="#">The current COVID-19 situation in Budapest</a></h4>
-                <span class="blog__meta-date">May 20, 2021</span>
-                <p class="blog__desc">The vaccine rollout is progressing well in Hungary, which has helped Hungary become one of the most vaccinated countries in the world (the rate of vaccination in Budapest is above the country average). COVID infection rates are low and are in steady decline...
-                </p>
-                <a href="covid-19-budapest-may-2021.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.blog-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="blog-item">
-              <div class="blog__img">
-                <a href="covid-19-certificates-may-2021.html">
-                  <img src="static/images/covid/immun-covid.jpeg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="blog__content">
-                <div class="blog__meta">
-                  <div class="blog__meta-cat">
-                    <a href="#">Immunity Certificates</a><a href="#">Covid-19</a>
-                  </div><!-- /.blog-meta-cat -->
-                </div><!-- /.blog-meta -->
-                <h4 class="blog__title"><a href="#">Important information about immunity certificates in Hungary</a></h4>
-                <span class="blog__meta-date">May 30, 2021</span>
-                <p class="blog__desc">A number of international documents from many countries are already being accepted (meaning you can be granted entry), with the list of documents expanding quickly. In case you are unsure whether your certificate of vaccination / immunity will be accepted in Hungary please get in touch...</p>
-                <a href="covid-19-certificates-may-2021.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.blog-item -->
-          </div><!-- /.col-lg-4 -->
-         
-</div>
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-            <nav class="pagination-area">
-              <ul class="pagination justify-content-center">
-                <li><a class="current" href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#"><i class="icon-arrow-right"></i></a></li>
-              </ul>
-            </nav><!-- .pagination-area -->
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.blog Grid -->
+          <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                  <div class="heading heading-layout3 mb-40">
+                      <h2 class="heading__title">Recent Articles</h2>
+                  </div>
+                  <!-- /.heading -->
+              </div>
+              <!-- /.col-lg-6 -->
+          </div>
+          <!-- /.row -->
+          <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="slick-carousel" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "arrows": true, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
+                      <!-- Blog Item #1 -->
+                      <div class="blog-item">
+                          <div class="blog__img">
+                              <a href="covid-19-budapest-may-2021.html">
+                                  <img src="static/images/covid/covid2.jpeg" alt="blog image">
+                              </a>
+                          </div>
+                          <!-- /.blog-img -->
+                          <div class="blog__content">
+                              <div class="blog__meta">
+                                  <div class="blog__meta-cat">
+                                      <a href="covid-19-budapest-may-2021.html">Covid-19</a><a href="#">Situation</a>
+                                  </div>
+                                  <!-- /.blog-meta-cat -->
+                              </div>
+                              <!-- /.blog-meta -->
+                              <h4 class="blog__title"><a href="covid-19-budapest-may-2021.html">The Current COVID-19 Situation In Budapest</a>
+                              </h4>
+                              <span class="blog__meta-date">May 30, 2021</span>
+                              <p class="blog__desc">The vaccine rollout is progressing well in Hungary, which has helped Hungary become one of the most vaccinated countries in the world (the rate of vaccination in Budapest is above the country average). COVID infection rates are low and are in steady decline...
+                              </p>
+                              <a href="covid-19-budapest-may-2021.html" class="btn btn__secondary btn__link">
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                              </a>
+                          </div>
+                          <!-- /.blog-content -->
+                      </div>
+                      <!-- /.blog-item -->
+                      <!-- Blog Item #2 -->
+                      <div class="blog-item">
+                          <div class="blog__img">
+                              <a href="covid-19-certificates-may-2021.html">
+                                  <img src="static/images/covid/immun-covid.jpeg" alt="blog image">
+                              </a>
+                          </div>
+                          <!-- /.blog-img -->
+                          <div class="blog__content">
+                              <div class="blog__meta">
+                                  <div class="blog__meta-cat">
+                                      <a href="covid-19-certificates-may-2021.html">Immunity Certificates</a><a href="covid-19-certificates-may-2021.html">Covid-19</a>
+                                  </div>
+                                  <!-- /.blog-meta-cat -->
+                              </div>
+                              <!-- /.blog-meta -->
+                              <h4 class="blog__title"><a href="covid-19-certificates-may-2021.html">Important Information About Immunity Certificates In Hungary </a>
+                              </h4>
+                              <span class="blog__meta-date">May 30, 2021</span>
+                              <p class="blog__desc">A number of international documents from many countries are already being accepted (meaning you can be granted entry), with the list of documents expanding quickly. In case you are unsure whether your certificate of vaccination / immunity will be accepted in Hungary please get in touch...</p>
+                              <a href="covid-19-certificates-may-2021.html" class="btn btn__secondary btn__link">
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                              </a>
+                          </div>
+                          <!-- /.blog-content -->
+                      </div>
+                      <!-- /.blog-item -->
+                      <!-- Blog Item #3 -->
+                      <div class="blog-item">
+                          <div class="blog__img">
+                              <a href="#">
+                                  <img src="static/images/blog/grid/3.jpg" alt="blog image">
+                              </a>
+                          </div>
+                          <!-- /.blog-img -->
+                          <div class="blog__content">
+                              <div class="blog__meta">
+                                  <div class="blog__meta-cat">
+                                      <a href="#">Walking</a><a href="#">Tours</a>
+                                  </div>
+                                  <!-- /.blog-meta-cat -->
+                              </div>
+                              <!-- /.blog-meta -->
+                              <h4 class="blog__title"><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </a></h4>
+                              <span class="blog__meta-date">Feb 14, 2021</span>
+                              <p class="blog__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit totam ullam quisquam explicabo, consectetur ex molestias rem nemo iste incidunt modi vero</p>
+                              <a href="blog-single-post.html" class="btn btn__secondary btn__link">
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                              </a>
+                          </div>
+                          <!-- /.blog-content -->
+                      </div>
+                      <!-- /.blog-item -->
+                      <!-- Blog Item #4 -->
+                      <div class="blog-item">
+                          <div class="blog__img">
+                              <a href="#">
+                                  <img src="static/images/blog/grid/4.jpg" alt="blog image">
+                              </a>
+                          </div>
+                          <!-- /.blog-img -->
+                          <div class="blog__content">
+                              <div class="blog__meta">
+                                  <div class="blog__meta-cat">
+                                      <a href="#">News</a><a href="#">Topic</a>
+                                  </div>
+                                  <!-- /.blog-meta-cat -->
+                              </div>
+                              <!-- /.blog-meta -->
+                              <h4 class="blog__title"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.!</a></h4>
+                              <span class="blog__meta-date">Feb 14, 2021</span>
+                              <p class="blog__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit totam ullam quisquam explicabo, consectetur ex molestias rem nemo iste incidunt modi vero</p>
+                              <a href="blog-single-post.html" class="btn btn__secondary btn__link">
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                              </a>
+                          </div>
+                          <!-- /.blog-content -->
+                      </div>
+                      <!-- /.blog-item -->
+                      <!-- Blog Item #5 -->
+                      <div class="blog-item">
+                          <div class="blog__img">
+                              <a href="#">
+                                  <img src="static/images/blog/grid/5.jpg" alt="blog image">
+                              </a>
+                          </div>
+                          <!-- /.blog-img -->
+                          <div class="blog__content">
+                              <div class="blog__meta">
+                                  <div class="blog__meta-cat">
+                                      <a href="#">Insights</a><a href="#">Wine</a>
+                                  </div>
+                                  <!-- /.blog-meta-cat -->
+                              </div>
+                              <!-- /.blog-meta -->
+                              <h4 class="blog__title"><a href="#">Lorem ipsum dolor sit amet consectetur dolor sit.</a></h4>
+                              <span class="blog__meta-date">Feb 14, 2021</span>
+                              <p class="blog__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit totam ullam quisquam explicabo, consectetur ex molestias rem nemo iste incidunt modi vero</p>
+                              <a href="blog-single-post.html" class="btn btn__secondary btn__link">
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                              </a>
+                          </div>
+                          <!-- /.blog-content -->
+                      </div>
+                      <!-- /.blog-item -->
+                      <!-- Blog Item #6 -->
+                      <div class="blog-item">
+                          <div class="blog__img">
+                              <a href="#">
+                                  <img src="static/images/blog/grid/6.jpg" alt="blog image">
+                              </a>
+                          </div>
+                          <!-- /.blog-img -->
+                          <div class="blog__content">
+                              <div class="blog__meta">
+                                  <div class="blog__meta-cat">
+                                      <a href="#">Topic</a><a href="#">Topic</a>
+                                  </div>
+                                  <!-- /.blog-meta-cat -->
+                              </div>
+                              <!-- /.blog-meta -->
+                              <h4 class="blog__title"><a href="#">Lorem Lorem Lorem Lorem Lorem</a></h4>
+                              <span class="blog__meta-date">Feb 14, 2021</span>
+                              <p class="blog__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit totam ullam quisquam explicabo, consectetur ex molestias rem nemo iste incidunt modi vero</p>
+                              <a href="blog-single-post.html" class="btn btn__secondary btn__link">
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                              </a>
+                          </div>
+                          <!-- /.blog-content -->
+                      </div>
+                      <!-- /.blog-item -->
+                  </div>
+                  <!-- /.carousel -->
+              </div>
+              <!-- /.col-lg-12 -->
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.container -->
+  </section>
+  <!-- /.blog carousel -->
+
+
     {% endblock content %}
